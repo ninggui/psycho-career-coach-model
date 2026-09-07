@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  body { background: #0f1220; display: flex; justify-content: center; padding: 40px 20px; }
+  .card { width: 900px; background: linear-gradient(160deg, #161a2e 0%, #1a1f38 100%); border: 1px solid #2a3155; border-radius: 20px; padding: 40px; color: #e8eaf2; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+  .badge { display: inline-block; background: #4f6ef7; color: #fff; font-size: 12px; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; }
+  h1 { font-size: 26px; margin-bottom: 8px; }
+  .sub { color: #8b93b8; font-size: 14px; margin-bottom: 28px; }
+  .conclusion { background: #232a4d; border-left: 4px solid #4f6ef7; border-radius: 10px; padding: 20px 24px; margin-bottom: 28px; }
+  .conclusion .label { color: #4f6ef7; font-size: 12px; letter-spacing: 2px; margin-bottom: 8px; }
+  .conclusion .text { font-size: 16px; line-height: 1.7; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
+  .dim { background: #1d2340; border: 1px solid #2a3155; border-radius: 12px; padding: 16px 18px; }
+  .dim .t { color: #4f6ef7; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .dim .v { font-size: 14px; line-height: 1.6; color: #c6cbe2; }
+  .chain-title { font-size: 15px; color: #8b93b8; margin-bottom: 12px; }
+  .chain { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .item { background: #232a4d; border-radius: 10px; padding: 12px; text-align: center; font-size: 12px; line-height: 1.5; color: #c6cbe2; }
+  .item .num { display: block; color: #4f6ef7; font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+  .foot { margin-top: 24px; font-size: 12px; color: #5c6488; text-align: center; }
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="badge">双角色评估模型 · 成果展示</span>
+  <h1>心理咨询师 + 职业发展规划师</h1>
+  <div class="sub">输入：全量语音/聊天记录（导出文字）→ 输出：结构化评估报告链</div>
+
+  <div class="conclusion">
+    <div class="label">总判断（示例结论）</div>
+    <div class="text">认知能力、语言组织、逻辑表达明显高于平均水平；没有认知异常或"心理坏掉了"。真正的问题是：长期用高标准、自驱、责任感和控制感维持自己，导致情绪承载、放松许可、关系求助、身体恢复几个系统长期偏弱——典型"高功能焦虑 + 强控制型内耗 + 慢性倦怠风险"。</div>
+  </div>
+
+  <div class="grid">
+    <div class="dim"><div class="t">人格画像</div><div class="v">清晰且稳定；持续校准对话主旨、区分沟通动作、多层抽象——高认知个体的典型结构</div></div>
+    <div class="dim"><div class="t">情绪模式</div><div class="v">高功能焦虑（非失控型）：能力足以维持运转，代价是情绪承载与放松许可长期欠账</div></div>
+    <div class="dim"><div class="t">职业人格</div><div class="v">成熟，接近"行业型方法论人才"；职业认知远高于同龄段，缺的是路线选择与呈现</div></div>
+    <div class="dim"><div class="t">核心矛盾</div><div class="v">不是需要被安慰，而是需要重新校正"活法"：从控制一切 → 选择性放手 + 系统修复</div></div>
+  </div>
+
+  <div class="chain-title">完整成果链（10 份报告）</div>
+  <div class="chain">
+    <div class="item"><span class="num">01</span>聊天原内容（输入）</div>
+    <div class="item"><span class="num">02</span>基础分析报告</div>
+    <div class="item"><span class="num">03</span>人格结构正式报告</div>
+    <div class="item"><span class="num">04</span>操作系统说明书</div>
+    <div class="item"><span class="num">05</span>致命盲点+30天方案</div>
+    <div class="item"><span class="num">06</span>关系吃亏+职业路线</div>
+    <div class="item"><span class="num">07</span>岗位关键词+职业故事</div>
+    <div class="item"><span class="num">08</span>简历成稿+面试题库</div>
+    <div class="item"><span class="num">09</span>投递话术压缩简历</div>
+    <div class="item"><span class="num">10</span>Boss沟通实战</div>
+  </div>
+
+  <div class="foot">psycho-career-coach-model · 双角色提示词驱动 · 全量记录 → 结构化自我认知资产</div>
+</div>
+</body>
+</html>
