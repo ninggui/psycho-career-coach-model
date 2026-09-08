@@ -1,46 +1,66 @@
+<div align="center">
+
 # 心理咨询师与职业发展规划师评估模型
 
-![GitHub stars](https://img.shields.io/github/stars/ninggui/psycho-career-coach-model)
-![License](https://img.shields.io/github/license/ninggui/psycho-career-coach-model)
-[![SkillHub](https://img.shields.io/badge/SkillHub-在线安装-blue)](https://skillhub.cn/skills/psycho-career-coach-model)
+**把用户与AI的语音/聊天记录导出文字后，用"心理咨询师+职业发展规划师"双角色提示词做全量评估，产出结构化报告链。触发：心理评估、职业规划评估、语音记录分析、人格画像、职业定位。**
 
-把与 AI 的语音/聊天记录导出文字，用双角色提示词做全量心理+职业评估。
+[SkillHub 在线安装](https://skillhub.cn/skills/psycho-career-coach-model) · [快速使用](#快速使用) · [核心能力](#核心能力) · [使用边界](#使用边界)
 
-## 这是什么
+</div>
 
-一个可复用的 AI Agent 技能（Skill），来自真实业务场景沉淀，含完整执行流程、避坑清单与验证步骤。
+---
+
+这是 桂宁 在真实业务场景中沉淀的可复用 AI Agent 技能（Skill），来自 Hermes Agent 实战运维，含完整执行流程、避坑清单与验证步骤。
 
 ## 快速使用
 
-将本仓库放入 Agent 技能目录后，用对应触发词调用（见 SKILL.md），Agent 会自动加载并执行完整流程。
+将本仓库放入 Agent 技能目录后，用对应触发词调用，Agent 会自动加载并执行完整流程。
+
+```text
+使用 心理咨询师与职业发展规划师评估模型 技能。
+这是待处理内容，直接执行。
+```
 
 ## 核心能力
 
 | 能力 | 说明 |
 |------|------|
-| 语音记录导出与清洗 |
-| 双角色评估提示词（咨询师+规划师） |
-| 10 段结构化报告框架 |
-| 成果链深化（人格/盲点/职业/简历/面试） |
+| 完整流程 | 步骤清晰，含验证与避坑 |
+| 即装即用 | 目录完整，无需额外依赖 |
+| 持续迭代 | 实战沉淀，随场景更新 |
+
+## 触发场景
+
+- 涉及「心理咨询师与职业发展规划师评估模型」的场景任务
+- 需要复用已验证方法论的工作
+- 批量/复杂任务中的专项环节
 
 ## 使用方式（安装）
 
 - **Hermes**: 放入 `skills/` 目录
-- **Claude**: 放入 `~/.claude/skills/`
-- **其他 Agent**: 按对应 SKILL.md 格式放入技能目录
-- **SkillHub 一键安装**: https://skillhub.cn/skills/psycho-career-coach-model
+- **Claude Code**: 放入 `~/.claude/skills/`
+- **Cursor**: 放入 `.cursor/skills/`
+- **SkillHub**: 一键安装（见上方徽章链接）
 
-## 优势
+## 目录结构
 
-- 全量记录→结构化自我认知资产
-- 提示词模板开箱即用
-- 从心理评估到求职落地的完整链路
+<details>
+<summary><strong>查看完整目录</strong></summary>
 
-## 内容结构
+```text
+SKILL.md              # 主技能文件：流程、边界与执行规则
+references/           # 参考文档（方法、模板、数据）
+scripts/              # 可执行脚本（如有）
+```
 
-- `SKILL.md` — 核心技能定义（触发条件、执行流程、避坑清单）
-- `references/` — 可选参考文件
+</details>
 
-## 许可
+## 使用边界
+
+- 本技能来自个人实践沉淀，按需取用，不承诺适用于所有场景
+- 敏感信息（密钥、内网地址、个人数据）不写入技能内容
+- 命令与脚本如与实际环境不符，以当前环境为准
+
+## License
 
 MIT
