@@ -1,5 +1,8 @@
 <div align="center">
 
+
+![cover](assets/cover.png)
+
 # psycho-career-coach-model
 
 **双角色评估：资深心理咨询师 + 职业发展规划师，从长对话记录出结构化自我认知。**
